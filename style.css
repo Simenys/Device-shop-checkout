@@ -1,17 +1,41 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+/* error */
+/* Container for the split background */
+.split-background {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Two equal halves */
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
-body {
-    background-color: F3F4F6;
+/* Left side with background image */
+.top {
+    background-image: url(img/background-image@2x.png); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
 }
 
-/* @media (min-width: 1280px) {
-    
-} */
+/* Right side with background color */
+.bottom {
+    background-color: #f3f4f6; /* Replace with your desired color */
+}
 
-#banner {
+/* Centered content div on top of the split background */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px; /* Optional: rounded corners */
     border: 1px solid black;
 }
