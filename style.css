@@ -1,7 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: F3F4F6;
 }
 
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
     
+} */
+
+#banner {
+    border: 1px solid black;
 }
