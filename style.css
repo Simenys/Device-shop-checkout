@@ -29,6 +29,31 @@
     /* background-position: center top; */
     background-repeat: no-repeat;
     background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h1, h4 {
+    margin-top: -150px;
+    
+    
+    font-family: Inter, Sans-serif;
+    color: #FFFFFF;
+}
+
+.top h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-right: 10px; 
+}
+
+.top h4 {
+    font-weight: 600;
+    font-size: 0.75rem;
+    background-color: #95AAD0;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
 }
 
 /* Bottom section with background color */
@@ -96,7 +121,7 @@
 /* .items */
 .productPhoto {
     height: 100px;
-    width: 100px;
+    min-width: 100px;
     background: white;
     border-radius: 10px;
     border: 0.5px solid #00000033;
@@ -110,8 +135,37 @@
     margin: 35px;
 }
 
+.productDescription {
+    width: 80%;
+    height: 100px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
 .productDescriptionLines {
     display: flex;
     justify-content: space-between;
-    width: 90%;
 }
+
+.line2 {
+    margin-top: 5px;
+}
+.line3 {
+    margin-top: auto;
+}
+
+.productNamePrice {
+    font-family: Inter, Sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.greyText {
+    font-family: Inter, Sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #6C727F;
+}
+
+/* .contacts */
