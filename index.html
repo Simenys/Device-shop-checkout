@@ -12,15 +12,19 @@
 </head>
 
 <body>
-    <div class="split-background">
-        <div class="top">
-            <h1>Checkout</h1>
-            <h4>3 ITEMS</h4>
+    <div class="container">
+        <!-- Banner -->
+        <div class="banner">
+            <span class="bannerText">
+                <h1>Checkout</h1>
+                <p>3 ITEMS</p>
+            </span>
         </div>
-        <div class="bottom"></div>
-        <div class="content">
-            <div class="items">
-                <div class="itemRows">
+
+        <!-- Splitted Content -->
+        <div class="splitContent">
+            <div class="purchasedItems">
+                <div class="itemRows row1">
                     <div class="productPhoto"><img src="img/Gold.png" alt="Iphone Gold"></div>
                     <div class="productDescription">
                         <span class="productDescriptionLines line1 productNamePrice">
@@ -36,7 +40,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="itemRows">
+                <div class="itemRows row2">
                     <div class="productPhoto"><img src="img/Blue.png" alt="Watch Blue"></div>
                     <div class="productDescription">
                         <span class="productDescriptionLines line1 productNamePrice">
@@ -52,7 +56,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="itemRows">
+                <div class="itemRows row3">
                     <div class="productPhoto"><img src="img/iMac=Front 1.png" alt="iMac"></div>
                     <div class="productDescription">
                         <span class="productDescriptionLines line1 productNamePrice">
@@ -68,8 +72,27 @@
                         </span>
                     </div>
                 </div>
-                <div></div>
-                <div></div>
+                <hr>
+                <div class="checkout">
+                    <form action="" method="get">
+                        <input type="text" id="enterCoupon" name="enterCoupon">
+                        <button>Apply Coupon</button>
+                    </form>
+                    <div class="totalPrice">
+                        <span class="totalPriceRows">
+                            <p>Sub total</p>
+                            <p>$2597.00</p>
+                        </span>
+                        <span class="totalPriceRows">
+                            <p>Tax</p>
+                            <p>$623.28</p>
+                        </span>
+                        <span class="totalPriceRows">
+                            <p>Total</p>
+                            <p>$3220.28</p>
+                        </span>
+                    </div>
+                </div>
             </div>
             <div class="contactDetails">
                 <h2>contacts</h2>
