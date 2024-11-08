@@ -12,7 +12,8 @@
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
-    height: 100vh;
+    /* height: 100vh; */
+    padding-bottom: 40px;
 }
 
 /* Banner */
@@ -108,7 +109,7 @@ hr {
 }
 
 /* Checkout */
-form {
+.formCoupon {
     padding: 30px 30px 0px 30px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -125,7 +126,7 @@ input, textarea {
     padding-left: 15px;
     font-family: Inter, Sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 4purchasedItems 00;
 }
 
 button {
@@ -154,3 +155,46 @@ button {
 .greyText {
     color: #6C727F;
 }
+
+/* Contact Details */
+.contactDetails {
+    font-size: 1rem;
+    padding: 30px;
+    background-color: white;
+}
+
+.formContact {
+    display: grid;  
+}
+
+.contactRows {
+    display: grid;
+    padding-bottom:  30px;
+    row-gap: 10px;
+}
+
+.contactDetails p {
+    padding-bottom: 30px;
+}
+
+.countryAndPostal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    /* bellow does not help to add a gap between label and input in contact and postal code */
+    row-gap: 10px; 
+}
+
+.selectCountry {
+    display: grid;
+}
+
+.selectCountry select {
+    height: 51px;
+    border-radius: 7px;
+}
+
+.postCodeDiv input {
+    width: 100%;
+}
+

@@ -74,7 +74,7 @@
                 </div>
                 <hr>
                 <div class="checkout">
-                    <form action="" method="get">
+                    <form class="formCoupon" action="" method="get">
                         <input type="text" id="enterCoupon" name="enterCoupon" placeholder="Enter coupon code">
                         <button>Apply Coupon</button>
                     </form>
@@ -95,7 +95,33 @@
                 </div>
             </div>
             <div class="contactDetails">
-                <h2>contacts</h2>
+                <p>Contact Information</p>
+                <form class="formContact" action="" method="get">
+                    <div class="contactRows">
+                        <label for="name">Enter first &amp Last name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter first & last name">
+                    </div>
+                    <div class="contactRows">
+                        <label for="">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="Enter email address">
+                    </div>
+                    <div class="countryAndPostal contactRows">
+                        <div class="selectCountry">
+                            <label for="country">Country</label>
+                            <select name="country" id="country">
+                                <option value="finland">Finland</option>
+                                <option value="lithuania">Lithuania</option>
+                                <option value="latvia">Latvia</option>
+                                <option value="estonia">Estonia</option>
+                            </select>
+                        </div>
+                        <div class="postCodeDiv contactRowss">
+                            <label for="postCode">Postal Code</label>
+                            <input type="text" name="postCode" id="postCode" placeholder="00270">
+                        </div>
+                    </div>
+                    <button>Continue</button>
+                </form>
             </div>
         </div>
     </div>
