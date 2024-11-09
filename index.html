@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:wght@300;600&family=Open+Sans:wght@400;600;700&family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:wght@300;600&family=Open+Sans:wght@400;600;700&family=Raleway:wght@800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>https://devchallenges.io/editor/solution/38313</title>
 </head>
@@ -94,6 +96,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Contact details  -->
             <div class="contactDetails">
                 <p>Contact Information</p>
                 <form class="formContact" action="" method="get">
@@ -105,22 +108,24 @@
                         <label for="">Email Address</label>
                         <input type="email" name="email" id="email" placeholder="Enter email address">
                     </div>
-                    <div class="countryAndPostal contactRows">
+                    <div class="countryAndPostal">
                         <div class="selectCountry">
                             <label for="country">Country</label>
-                            <select name="country" id="country">
-                                <option value="finland">Finland</option>
-                                <option value="lithuania">Lithuania</option>
-                                <option value="latvia">Latvia</option>
-                                <option value="estonia">Estonia</option>
+                            <select
+                                style="font-family: 'Inter', Sans-serif; font-size: 1rem; color: black; font-weight: 600;"
+                                class="country" name="country" id="country">
+                                <option class="optionValue" value="finland">Finland</option>
+                                <option class="optionValue" value="lithuania">Lithuania</option>
+                                <option class="optionValue" value="latvia">Latvia</option>
+                                <option class="optionValue" value="estonia">Estonia</option>
                             </select>
                         </div>
-                        <div class="postCodeDiv contactRowss">
+                        <div class="postCodeDiv">
                             <label for="postCode">Postal Code</label>
                             <input type="text" name="postCode" id="postCode" placeholder="00270">
                         </div>
                     </div>
-                    <button>Continue</button>
+                    <button id="continueButton">Continue</button>
                 </form>
             </div>
         </div>

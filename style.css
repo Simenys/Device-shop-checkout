@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Inter, Sans-serif;
+    font-family: 'Inter', Sans-serif;
 }
 
 /* Main container */
@@ -124,9 +124,9 @@ input, textarea {
 
 ::placeholder {
     padding-left: 15px;
-    font-family: Inter, Sans-serif;
+    font-family: 'Inter', Sans-serif;
     font-size: 1rem;
-    font-weight: 4purchasedItems 00;
+    font-weight: 400;
 }
 
 button {
@@ -181,20 +181,31 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 24px;
-    /* bellow does not help to add a gap between label and input in contact and postal code */
-    row-gap: 10px; 
+    padding-bottom: 30px;
 }
 
 .selectCountry {
     display: grid;
+    row-gap: 10px;
 }
 
 .selectCountry select {
     height: 51px;
     border-radius: 7px;
+    border: 1px solid #00000033;
+    padding-left: 10px; 
 }
 
+.postCodeDiv {
+    display: grid;
+    row-gap: 10px;
+}
 .postCodeDiv input {
     width: 100%;
 }
 
+#continueButton {
+    height: 51px;
+    width: 100%;
+    margin-left: 0px;
+}
